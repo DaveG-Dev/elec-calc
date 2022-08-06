@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hello</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    </head>
+    <body>
+        <h1>Hello, Electricians!</h1>
+        <H3>Built for Electricians, by Electricians.</H3>
+        <h3>Dave</h3>
+        <form action="calc">
+            {% csrf_token %}
+            Current(Amps)<br />
+            <input type="text" name="t1"/> <br /><br />
+            Resistance(Ohms)<br/>
+            <input type="text" name="t2"/> <br /><br />
+            <input type="submit" value="click me"/> <br/>
+            {{calc_value}}
+        </form>
+    </body>
+</html>
