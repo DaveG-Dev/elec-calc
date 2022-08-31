@@ -1,0 +1,19 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aqua;
+}
+
+.bg-img {
+    background: url('electrician.jpg') no-repeat fixed;
+    background-size: 100% ;
+} 
+
+.home-text {
+    color: white;
+}
+
+.main-text {
+    color: #212529;
+}
+
+/*#212529;*/

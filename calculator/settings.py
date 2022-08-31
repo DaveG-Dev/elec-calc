@@ -23,6 +23,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'mathfilters',
+    'home',
     'electrical',
     'tools',
     'django.contrib.admin',
@@ -111,7 +112,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-
+STATICFILES_DIRS = [
+    BASE_DIR / "electrical"
+]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type

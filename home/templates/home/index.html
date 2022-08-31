@@ -1,0 +1,27 @@
+{% extends 'electrical/navbar.html' %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrician's Resources</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+{% block navbar %}
+<body class="bg-img">
+
+    <!---<img class="img-fluid"src={% static 'electrician.jpg' %} alt="Electrician" /> -->
+
+<section>
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-6">
+                <h2 class="mt-5 home-text">Your Electrician's Resource by Dave!</h2>
+                <p class="home-text">Wether you're a master electrician, journeyman, apprentice or just thinking about becoming an electrician, electriciancalculator.net hopes to provide ample resources in your venture.</p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+{% endblock %}
+
+
