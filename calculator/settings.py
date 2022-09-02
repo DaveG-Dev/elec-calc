@@ -24,6 +24,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'mathfilters',
     'home',
+    'about',
     'electrical',
     'tools',
     'django.contrib.admin',
